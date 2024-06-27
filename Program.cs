@@ -15,7 +15,7 @@ namespace ConsoleApp1
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "WO_to_LIMS_Wrapper";
                 cmd.Parameters.Add("pnWOID", OracleDbType.Int16).Value = 300451;
-                cmd.Parameters.Add("psUser", OracleDbType.Char).Value = "BANDERSON";
+                cmd.Parameters.Add("psUser", OracleDbType.Char).Value = "XYZ";
                 cmd.Connection.Open();
                 cmd.ExecuteNonQuery();
             }
